@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "indoor-kids",
+    "name_en": "Indoor Activities (Kids)",
+    "name_fr": "Activités intérieures (enfants)",
+    "icon": "🧒",
+    "description_en": "Kid-friendly indoor attractions — from science centres and children's museums to trampoline parks and escape rooms.",
+    "description_fr": "Attraits intérieurs pour enfants — des centres des sciences et musées pour enfants aux parcs de trampolines et salles d'évasion."
+  },
+  {
+    "slug": "outdoor",
+    "name_en": "Outdoor Activities",
+    "name_fr": "Activités de plein air",
+    "icon": "🌲",
+    "description_en": "Parks, trails, cycling routes, kayaking, and everything the great Canadian outdoors has to offer.",
+    "description_fr": "Parcs, sentiers, pistes cyclables, kayak et tout ce que le grand air canadien peut offrir."
+  },
+  {
+    "slug": "free",
+    "name_en": "Free Activities",
+    "name_fr": "Activités gratuites",
+    "icon": "🆓",
+    "description_en": "Explore your city without spending a dime — free parks, public art, beaches, markets, and community events.",
+    "description_fr": "Explorez votre ville sans dépenser un sou — parcs gratuits, art public, plages, marchés et événements communautaires."
+  },
+  {
+    "slug": "rainy-day",
+    "name_en": "Rainy Day Activities",
+    "name_fr": "Activités par temps pluvieux",
+    "icon": "🌧️",
+    "description_en": "When the weather turns, head indoors — bowling, cinemas, spas, galleries, food halls, and cozy cafés.",
+    "description_fr": "Quand le temps tourne, restez au sec — bowling, cinémas, spas, galeries, halles alimentaires et cafés cosy."
+  },
+  {
+    "slug": "date-night",
+    "name_en": "Date Night",
+    "name_fr": "Soirée en amoureux",
+    "icon": "💑",
+    "description_en": "Romantic dinner spots, cocktail bars, rooftop terraces, comedy shows, and couples' experiences for a perfect night out.",
+    "description_fr": "Restaurants romantiques, bars à cocktails, terrasses sur les toits, spectacles d'humour et expériences en couple pour une soirée parfaite."
+  },
+  {
+    "slug": "museums-culture",
+    "name_en": "Museums & Culture",
+    "name_fr": "Musées et culture",
+    "icon": "🏛️",
+    "description_en": "Art galleries, history museums, science centres, archives, and cultural institutions worth visiting.",
+    "description_fr": "Galeries d'art, musées d'histoire, centres scientifiques, archives et institutions culturelles qui valent le détour."
+  },
+  {
+    "slug": "festivals-events",
+    "name_en": "Festivals & Events",
+    "name_fr": "Festivals et événements",
+    "icon": "🎪",
+    "description_en": "Seasonal festivals, outdoor concerts, holiday markets, film festivals, and community events — Canada's calendar is packed.",
+    "description_fr": "Festivals saisonniers, concerts en plein air, marchés de Noël, festivals de cinéma et événements communautaires — le calendrier canadien est chargé."
+  },
+  {
+    "slug": "day-trips",
+    "name_en": "Day Trips",
+    "name_fr": "Excursions à la journée",
+    "icon": "🚗",
+    "description_en": "The best destinations within 2–3 hours of major cities — towns, national parks, wineries, and hidden gems.",
+    "description_fr": "Les meilleures destinations à 2–3 heures des grandes villes — villages, parcs nationaux, vignobles et joyaux cachés."
+  }
+]

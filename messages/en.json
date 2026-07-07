@@ -1,0 +1,138 @@
+{
+  "common": {
+    "siteName": "MyActivity.ca",
+    "tagline": "Discover things to do across Canada",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "bookNow": "Book Now",
+    "free": "Free",
+    "kidFriendly": "Kid-Friendly",
+    "indoors": "Indoors",
+    "outdoors": "Outdoors",
+    "loading": "Loading…",
+    "noResults": "No activities found."
+  },
+  "nav": {
+    "home": "Home",
+    "cities": "Cities",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "menu": "Menu",
+    "close": "Close menu"
+  },
+  "home": {
+    "title": "Things To Do in Canada",
+    "subtitle": "Find the best activities, attractions, and events in cities across Canada",
+    "exploreCities": "Explore by City",
+    "exploreCategories": "Browse Categories",
+    "seasonal": "Seasonal Picks",
+    "featuredActivities": "Featured Activities"
+  },
+  "cityHub": {
+    "title": "Things To Do in {city}",
+    "subtitle": "Discover the best activities, attractions, and events in {city}",
+    "categories": "Browse by Category",
+    "seasonal": "By Season",
+    "allActivities": "All Activities in {city}"
+  },
+  "categoryPage": {
+    "title": "{category} in {city}",
+    "subtitle": "The best {category} in {city}, Canada — curated for locals and visitors",
+    "count": "{count} activities found"
+  },
+  "seasonalPage": {
+    "title": "{season} Activities in {city}",
+    "subtitle": "Discover what to do in {city} this {season}"
+  },
+  "categories": {
+    "indoor-kids": "Indoor Activities (Kids)",
+    "outdoor": "Outdoor Activities",
+    "free": "Free Activities",
+    "rainy-day": "Rainy Day Activities",
+    "date-night": "Date Night",
+    "museums-culture": "Museums & Culture",
+    "festivals-events": "Festivals & Events",
+    "day-trips": "Day Trips"
+  },
+  "seasons": {
+    "winter": "Winter",
+    "spring": "Spring",
+    "summer": "Summer",
+    "fall": "Fall",
+    "year-round": "Year-Round"
+  },
+  "priceRange": {
+    "free": "Free",
+    "$": "Budget",
+    "$$": "Moderate",
+    "$$$": "Premium"
+  },
+  "activityCard": {
+    "bookVia": "Book via {network}",
+    "checkAvailability": "Check Availability",
+    "viewDetails": "View Details",
+    "kidFriendlyBadge": "Kid-Friendly",
+    "freeBadge": "Free",
+    "affiliateDisclosure": "Affiliate link"
+  },
+  "filters": {
+    "allCategories": "All Categories",
+    "allSeasons": "All Seasons",
+    "allPrices": "All Prices",
+    "kidFriendlyOnly": "Kid-Friendly Only",
+    "apply": "Apply Filters",
+    "clear": "Clear"
+  },
+  "consent": {
+    "title": "We use cookies",
+    "description": "We use cookies and similar technologies for analytics and advertising. By clicking \"Accept All\", you consent to our use of cookies as described in our Privacy Policy.",
+    "acceptAll": "Accept All",
+    "declineAll": "Decline",
+    "learnMore": "Learn more in our",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "activities": "Activities",
+    "seasonal": "Seasonal",
+    "guides": "Guides"
+  },
+  "affiliate": {
+    "disclosure": "This page may contain affiliate links. We may earn a commission at no extra cost to you."
+  },
+  "meta": {
+    "homeTitle": "Things To Do in Canada | MyActivity.ca",
+    "homeDescription": "Discover the best activities, attractions, and events across Canada. Find things to do in Toronto, Montreal, Vancouver, Calgary and more.",
+    "cityTitle": "Things To Do in {city} | MyActivity.ca",
+    "cityDescription": "Discover the best things to do in {city}, Canada. Find indoor activities, outdoor adventures, free events, museums, and more.",
+    "categoryCityTitle": "{category} in {city} | MyActivity.ca",
+    "categoryCityDescription": "The best {category} in {city}, Canada. Curated activities and attractions for locals and visitors.",
+    "seasonalTitle": "{season} Activities in {city} | MyActivity.ca",
+    "seasonalDescription": "The best {season} activities in {city}, Canada. Discover what to do this {season}."
+  },
+  "about": {
+    "title": "About MyActivity.ca",
+    "heading": "Your Guide to the Best Things To Do in Canada",
+    "description": "MyActivity.ca is a bilingual Canadian directory of the best activities, attractions, and events — from coast to coast.",
+    "mission": "Our mission is to help Canadians and visitors discover unforgettable experiences in every city, every season."
+  },
+  "contact": {
+    "title": "Contact Us | MyActivity.ca",
+    "heading": "Get in Touch",
+    "description": "Have a suggestion, want to list your activity, or need to report an issue? We'd love to hear from you.",
+    "email": "hello@myactivity.ca"
+  },
+  "privacy": {
+    "title": "Privacy Policy | MyActivity.ca",
+    "heading": "Privacy Policy",
+    "lastUpdated": "Last Updated"
+  },
+  "footer": {
+    "description": "Your guide to the best things to do across Canada.",
+    "quickLinks": "Quick Links",
+    "legalLinks": "Legal",
+    "copyright": "© {year} MyActivity.ca. All rights reserved.",
+    "madeIn": "Made in Canada 🍁"
+  }
+}

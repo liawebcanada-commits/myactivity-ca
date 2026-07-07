@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  /* Accessible focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-red;
+  }
+}
+
+@layer components {
+  /* Activity grid */
+  .activity-grid {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Section container */
+  .container-page {
+    @apply mx-auto max-w-6xl px-4 sm:px-6;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-12 sm:py-16;
+  }
+}

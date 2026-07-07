@@ -1,0 +1,138 @@
+{
+  "common": {
+    "siteName": "MyActivity.ca",
+    "tagline": "Découvrez des activités partout au Canada",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "bookNow": "Réserver",
+    "free": "Gratuit",
+    "kidFriendly": "Enfants bienvenus",
+    "indoors": "Intérieur",
+    "outdoors": "Extérieur",
+    "loading": "Chargement…",
+    "noResults": "Aucune activité trouvée."
+  },
+  "nav": {
+    "home": "Accueil",
+    "cities": "Villes",
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "menu": "Menu",
+    "close": "Fermer le menu"
+  },
+  "home": {
+    "title": "Activités et sorties au Canada",
+    "subtitle": "Trouvez les meilleures activités, attraits et événements dans les villes du Canada",
+    "exploreCities": "Explorer par ville",
+    "exploreCategories": "Parcourir les catégories",
+    "seasonal": "Sélections saisonnières",
+    "featuredActivities": "Activités en vedette"
+  },
+  "cityHub": {
+    "title": "Quoi faire à {city}",
+    "subtitle": "Découvrez les meilleures activités, attraits et événements à {city}",
+    "categories": "Parcourir par catégorie",
+    "seasonal": "Par saison",
+    "allActivities": "Toutes les activités à {city}"
+  },
+  "categoryPage": {
+    "title": "{category} à {city}",
+    "subtitle": "Les meilleures {category} à {city}, au Canada — sélectionnées pour les résidents et les visiteurs",
+    "count": "{count} activités trouvées"
+  },
+  "seasonalPage": {
+    "title": "Activités d'{season} à {city}",
+    "subtitle": "Découvrez quoi faire à {city} cet {season}"
+  },
+  "categories": {
+    "indoor-kids": "Activités intérieures (enfants)",
+    "outdoor": "Activités de plein air",
+    "free": "Activités gratuites",
+    "rainy-day": "Activités par temps pluvieux",
+    "date-night": "Soirée en amoureux",
+    "museums-culture": "Musées et culture",
+    "festivals-events": "Festivals et événements",
+    "day-trips": "Excursions à la journée"
+  },
+  "seasons": {
+    "winter": "Hiver",
+    "spring": "Printemps",
+    "summer": "Été",
+    "fall": "Automne",
+    "year-round": "Toute l'année"
+  },
+  "priceRange": {
+    "free": "Gratuit",
+    "$": "Économique",
+    "$$": "Modéré",
+    "$$$": "Haut de gamme"
+  },
+  "activityCard": {
+    "bookVia": "Réserver via {network}",
+    "checkAvailability": "Vérifier la disponibilité",
+    "viewDetails": "Voir les détails",
+    "kidFriendlyBadge": "Enfants bienvenus",
+    "freeBadge": "Gratuit",
+    "affiliateDisclosure": "Lien affilié"
+  },
+  "filters": {
+    "allCategories": "Toutes les catégories",
+    "allSeasons": "Toutes les saisons",
+    "allPrices": "Tous les prix",
+    "kidFriendlyOnly": "Enfants bienvenus seulement",
+    "apply": "Appliquer les filtres",
+    "clear": "Effacer"
+  },
+  "consent": {
+    "title": "Nous utilisons des témoins",
+    "description": "Nous utilisons des témoins et des technologies similaires à des fins d'analytique et de publicité. En cliquant sur « Tout accepter », vous consentez à notre utilisation des témoins tel que décrit dans notre politique de confidentialité.",
+    "acceptAll": "Tout accepter",
+    "declineAll": "Refuser",
+    "learnMore": "En savoir plus dans notre",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "seasonal": "Saisonnier",
+    "guides": "Guides"
+  },
+  "affiliate": {
+    "disclosure": "Cette page peut contenir des liens affiliés. Nous pouvons toucher une commission sans frais supplémentaires pour vous."
+  },
+  "meta": {
+    "homeTitle": "Activités et sorties au Canada | MyActivity.ca",
+    "homeDescription": "Découvrez les meilleures activités, attraits et événements partout au Canada. Trouvez quoi faire à Montréal, Toronto, Vancouver, Calgary et plus encore.",
+    "cityTitle": "Quoi faire à {city} | MyActivity.ca",
+    "cityDescription": "Découvrez les meilleures choses à faire à {city}, au Canada. Activités intérieures, plein air, événements gratuits, musées et plus encore.",
+    "categoryCityTitle": "{category} à {city} | MyActivity.ca",
+    "categoryCityDescription": "Les meilleures {category} à {city}, au Canada. Activités et attraits sélectionnés pour les résidents et les visiteurs.",
+    "seasonalTitle": "Activités d'{season} à {city} | MyActivity.ca",
+    "seasonalDescription": "Les meilleures activités d'{season} à {city}, au Canada. Découvrez quoi faire ce {season}."
+  },
+  "about": {
+    "title": "À propos de MyActivity.ca",
+    "heading": "Votre guide des meilleures activités au Canada",
+    "description": "MyActivity.ca est un répertoire canadien bilingue des meilleures activités, attraits et événements — d'un océan à l'autre.",
+    "mission": "Notre mission est d'aider les Canadiens et les visiteurs à découvrir des expériences inoubliables dans chaque ville, en toute saison."
+  },
+  "contact": {
+    "title": "Contactez-nous | MyActivity.ca",
+    "heading": "Écrivez-nous",
+    "description": "Vous avez une suggestion, souhaitez afficher votre activité ou signaler un problème? Nous serions ravis de vous entendre.",
+    "email": "hello@myactivity.ca"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité | MyActivity.ca",
+    "heading": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour"
+  },
+  "footer": {
+    "description": "Votre guide des meilleures activités partout au Canada.",
+    "quickLinks": "Liens rapides",
+    "legalLinks": "Informations légales",
+    "copyright": "© {year} MyActivity.ca. Tous droits réservés.",
+    "madeIn": "Fait au Canada 🍁"
+  }
+}

@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: Type-check · Lint · Build · SEO scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ─── Type safety ──────────────────────────────────────────────────────────
+      - name: TypeScript type-check
+        run: npx tsc --noEmit
+
+      # ─── Code quality ────────────────────────────────────────────────────────
+      - name: ESLint
+        run: npm run lint
+
+      # ─── Build ───────────────────────────────────────────────────────────────
+      - name: Next.js build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://myactivity.ca
+
+      # ─── SEO validation (must run after build so data files are stable) ──────
+
+      - name: Validate hreflang pairs
+        # Fails CI if any page is missing a reciprocal en-CA/fr-CA alternate.
+        # Prevents the AstrologySky-style 5,400-page indexation failure.
+        run: npm run validate-hreflang
+        env:
+          NEXT_PUBLIC_SITE_URL: https://myactivity.ca
+
+      - name: Check duplicate content
+        # Fails CI if any two activity descriptions share > 15% bigram overlap.
+        # Enforces the Helpful Content Update protection rule.
+        run: npm run check-duplicate
+
+  # ─── Deploy preview (Vercel handles production deploys automatically) ─────────
+  # Vercel's GitHub integration manages deployments; this job is for pure CI.

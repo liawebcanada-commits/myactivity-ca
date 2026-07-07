@@ -1,0 +1,197 @@
+{
+  "_comment": "Link-building outreach log per Section 9.5. Status: prospecting | contacted | replied | linked | declined",
+  "_updated": "2025-01-01",
+  "prospects": [
+    {
+      "id": 1,
+      "organization": "Destination Canada",
+      "url": "https://www.destinationcanada.com",
+      "type": "national-tourism-board",
+      "contact_page": "https://www.destinationcanada.com/en/contact",
+      "pitch": "Bilingual EN/FR Canadian activity directory — relevant to their traveller audience",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "organization": "Tourism Toronto",
+      "url": "https://www.seetorontonow.com",
+      "type": "city-tourism-board",
+      "contact_page": "https://www.seetorontonow.com/industry/contact-us/",
+      "pitch": "High-quality things-to-do directory for Toronto visitors; free and paid activities covered",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "organization": "Tourisme Montréal",
+      "url": "https://www.mtl.org",
+      "type": "city-tourism-board",
+      "contact_page": "https://www.mtl.org/fr/nous-joindre",
+      "pitch": "Bilingual directory with Québécois French content for Montréal — strong FR-CA alignment",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "organization": "Ottawa Tourism",
+      "url": "https://www.ottawatourism.ca",
+      "type": "city-tourism-board",
+      "contact_page": "https://www.ottawatourism.ca/en/about/contact-us",
+      "pitch": "Seasonal hub pages including Winterlude and Rideau Canal — directly relevant to their audience",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "organization": "Tourism Vancouver",
+      "url": "https://www.tourismvancouver.com",
+      "type": "city-tourism-board",
+      "contact_page": "https://www.tourismvancouver.com/about/contact/",
+      "pitch": "English and French Vancouver activity guide covering Stanley Park, Grouse Mountain, Granville Island",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "organization": "Tourism Calgary",
+      "url": "https://www.visitcalgary.com",
+      "type": "city-tourism-board",
+      "contact_page": "https://www.visitcalgary.com/contact-us",
+      "pitch": "Stampede, Heritage Park, Banff day trip coverage — strong complement to their visitor content",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "organization": "Today's Parent",
+      "url": "https://www.todaysparent.com",
+      "type": "parenting-blog",
+      "contact_page": "https://www.todaysparent.com/contact/",
+      "pitch": "Kid-friendly activities category across 12 Canadian cities; WCAG AA accessible",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "organization": "Maman Loup",
+      "url": "https://www.mamanloup.com",
+      "type": "parenting-blog-fr",
+      "contact_page": "https://www.mamanloup.com/contact",
+      "pitch": "Québécois family blog — our FR content on Montréal, Québec City, Chambly is directly relevant",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "organization": "BlogTO",
+      "url": "https://www.blogto.com",
+      "type": "city-blog",
+      "contact_page": "https://www.blogto.com/contact/",
+      "pitch": "Comprehensive Toronto activity guide with unique editorial angle; pitch weekend guide section",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "organization": "Narcity Canada",
+      "url": "https://www.narcity.com",
+      "type": "city-blog",
+      "contact_page": "https://www.narcity.com/contact",
+      "pitch": "Multi-city coverage mirrors their city-by-city content model; bilingual",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "organization": "604 Now (Vancouver)",
+      "url": "https://604now.com",
+      "type": "city-blog",
+      "contact_page": "https://604now.com/contact/",
+      "pitch": "Vancouver activities guide; seasonal hubs for skiing, cherry blossoms align with their editorial",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "organization": "Immigration, Refugees and Citizenship Canada — Settlement Resources",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+      "type": "settlement-org",
+      "contact_page": "https://www.canada.ca/en/contact.html",
+      "pitch": "New immigrant audience discovering Canadian cities; free activities category is strong fit",
+      "status": "prospecting",
+      "notes": "Government — will need formal media/partnership request"
+    },
+    {
+      "id": 13,
+      "organization": "ACCES Employment",
+      "url": "https://accesemployment.ca",
+      "type": "settlement-org",
+      "contact_page": "https://accesemployment.ca/contact",
+      "pitch": "Newcomer services org that provides city-orientation resources to new Canadians",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "organization": "Hamilton Community Foundation",
+      "url": "https://www.hamiltoncommunityfoundation.ca",
+      "type": "local-community-org",
+      "contact_page": "https://www.hamiltoncommunityfoundation.ca/contact-us/",
+      "pitch": "Hamilton-specific content including waterfalls, art gallery, RBG — community resource fit",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "organization": "Ottawa Citizen — Weekend section",
+      "url": "https://ottawacitizen.com",
+      "type": "local-news",
+      "contact_page": "https://ottawacitizen.com/contact",
+      "pitch": "Weekend guide to Ottawa activities; strong match for Winterlude and canal seasonal content",
+      "status": "prospecting",
+      "notes": "Pitch to weekend/entertainment editor"
+    },
+    {
+      "id": 16,
+      "organization": "La Presse — Section Sorties",
+      "url": "https://www.lapresse.ca",
+      "type": "local-news-fr",
+      "contact_page": "https://www.lapresse.ca/nous-joindre",
+      "pitch": "FR-CA city guide — Montreal, Quebec City, Chambly coverage; pitch for 'quoi faire ce weekend'",
+      "status": "prospecting",
+      "notes": "Pitch to arts/culture or weekend desk"
+    },
+    {
+      "id": 17,
+      "organization": "Halifax Chronicle Herald — Weekend",
+      "url": "https://www.thechronicleherald.ca",
+      "type": "local-news",
+      "contact_page": "https://www.thechronicleherald.ca/contact/",
+      "pitch": "Halifax waterfront, Peggy's Cove, Pier 21 coverage — Atlantic Canada travel desk pitch",
+      "status": "prospecting",
+      "notes": ""
+    },
+    {
+      "id": 18,
+      "organization": "Waterloo Region Record",
+      "url": "https://www.therecord.com",
+      "type": "local-news",
+      "contact_page": "https://www.therecord.com/contact/",
+      "pitch": "Kitchener-Waterloo Oktoberfest, Grand River Trail, THEMUSEUM coverage — local community fit",
+      "status": "prospecting",
+      "notes": ""
+    }
+  ],
+  "press_releases": [
+    {
+      "id": "pr-001",
+      "title": "MyActivity.ca Launches Bilingual Canadian Activity Directory — 312 Pages Covering 12 Cities",
+      "hook": "Tie to Tourism Canada summer travel statistics or Canada Day tourism data",
+      "distributor": "EIN Presswire (preferred) or CNW Group",
+      "status": "draft",
+      "target_date": "",
+      "notes": "Do not use SEOClerks. Per spec: use EIN Presswire or comparable vetted distributor."
+    }
+  ]
+}
