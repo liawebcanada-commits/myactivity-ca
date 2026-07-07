@@ -14,7 +14,7 @@ import {
   getLocalizedCategoryName,
   SEASONS,
 } from '@/lib/data';
-import { generateCategoryPageSchema } from '@/lib/schema';
+import { generateCategoryPageSchema, generateEventSchema } from '@/lib/schema';
 import { categoryAlternates, categoryPath, cityPath, seasonalPath } from '@/lib/urls';
 import { categoryTitle, categoryDescription } from '@/lib/seo-meta';
 import ActivityCard from '@/components/ActivityCard';
@@ -86,8 +86,12 @@ export default async function CategoryCityPage({
   // Seasonal hub for the first relevant season
   const firstSeason = SEASONS[0];
 
-  // JSON-LD
+  // JSON-LD — CollectionPage + Event schemas for any dated events in festivals category
   const schema = generateCategoryPageSchema({ city, category, activities, locale });
+  const eventSchemas = activities
+    .filter((a) => a.event_start_date)
+    .map((a) => generateEventSchema(a, locale))
+    .filter(Boolean);
 
   // Locale-aware breadcrumb URLs
   const localeCityPath = locale === 'fr' ? `/${locale}/activites/${citySlug}` : `/${locale}/activities/${citySlug}`;
@@ -105,6 +109,14 @@ export default async function CategoryCityPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      {/* Event schemas for activities with dates (e.g. festivals-events category) */}
+      {eventSchemas.map((eventSchema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+        />
+      ))}
 
       {/* ─── Header ──────────────────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-brand-50 to-white py-10 sm:py-14">
