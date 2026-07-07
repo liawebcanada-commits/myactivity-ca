@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/types';
 import {
   getCityBySlug,
@@ -32,6 +32,7 @@ export function generateStaticParams() {
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export async function generateMetadata({ params: { locale, city: citySlug } }: Props): Promise<Metadata> {
+  setRequestLocale(locale);
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
@@ -56,6 +57,7 @@ export async function generateMetadata({ params: { locale, city: citySlug } }: P
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function CityHubPage({ params: { locale, city: citySlug } }: Props) {
+  setRequestLocale(locale);
   const city = getCityBySlug(citySlug);
   if (!city) notFound();
 

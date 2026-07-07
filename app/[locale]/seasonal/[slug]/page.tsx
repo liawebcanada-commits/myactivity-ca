@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/types';
 import {
   getCityBySlug,
@@ -28,6 +28,7 @@ export function generateStaticParams() {
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export async function generateMetadata({ params: { locale, slug } }: Props): Promise<Metadata> {
+  setRequestLocale(locale);
   const parsed = parseSeasonalSlug(slug);
   if (!parsed) return {};
 
@@ -60,6 +61,7 @@ export async function generateMetadata({ params: { locale, slug } }: Props): Pro
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function SeasonalHubPage({ params: { locale, slug } }: Props) {
+  setRequestLocale(locale);
   const parsed = parseSeasonalSlug(slug);
   if (!parsed) notFound();
 

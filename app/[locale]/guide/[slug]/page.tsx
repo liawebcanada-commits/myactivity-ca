@@ -1,18 +1,22 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/types';
-import { buildPageMetadata } from '@/lib/metadata';
+import { guideAlternates } from '@/lib/urls';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 
-// ─── Guide data loader ────────────────────────────────────────────────────────
-// TODO: Replace with your CMS / MDX loader when editorial guides are ready.
-// For now this returns null for any slug so the page 404s gracefully.
+// ─── Guide data loader ─────────────────────────────────────────────────────────────────────
+// Uses fs.readFileSync (not dynamic import) so the bundler does not attempt
+// to resolve `data/guides/*.json` at build time.
+// TODO: Replace with CMS / MDX loader when editorial guides are ready.
 
-async function getGuide(slug: string, locale: Locale) {
+function getGuide(slug: string) {
+  const filePath = path.join(process.cwd(), 'data', 'guides', `${slug}.json`);
   try {
-    const data = await import(`@/data/guides/${slug}.json`);
-    return data.default;
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(raw);
   } catch {
     return null;
   }
@@ -23,23 +27,32 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { locale, slug } }: Props): Promise<Metadata> {
-  const guide = await getGuide(slug, locale);
+  setRequestLocale(locale);
+  const guide = getGuide(slug);
   if (!guide) return {};
 
   const title = locale === 'fr' ? guide.title_fr : guide.title_en;
   const description = locale === 'fr' ? guide.excerpt_fr : guide.excerpt_en;
 
-  return buildPageMetadata({
+  return {
     title,
     description,
-    locale,
-    path: `/guide/${slug}`,
-    imageUrl: guide.image_url,
-  });
+    alternates: guideAlternates(locale, slug),
+    openGraph: {
+      title,
+      description,
+      url: guideAlternates(locale, slug).canonical,
+      siteName: 'MyActivity.ca',
+      locale: locale === 'fr' ? 'fr_CA' : 'en_CA',
+      type: 'article',
+      ...(guide.image_url ? { images: [{ url: guide.image_url }] } : {}),
+    },
+  };
 }
 
 export default async function GuidePage({ params: { locale, slug } }: Props) {
-  const guide = await getGuide(slug, locale);
+  setRequestLocale(locale);
+  const guide = getGuide(slug);
   if (!guide) notFound();
 
   const tb = await getTranslations({ locale, namespace: 'breadcrumbs' });

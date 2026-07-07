@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/types';
 import { getFeaturedCities, getAllCategories } from '@/lib/data';
 import { buildPageMetadata } from '@/lib/metadata';
@@ -11,6 +11,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'meta' });
   return buildPageMetadata({
     title: t('homeTitle'),
@@ -21,6 +22,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
 }
 
 export default async function HomePage({ params: { locale } }: Props) {
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'home' });
 
   const featuredCities = getFeaturedCities();
