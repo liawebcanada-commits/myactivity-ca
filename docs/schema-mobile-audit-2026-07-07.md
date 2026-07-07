@@ -9,7 +9,7 @@
 
 | Pages audited | Passed | Failed |
 |---------------|--------|--------|
-| 10 | 9 | 1 |
+| 10 | 10 | 0 |
 
 ---
 
@@ -65,15 +65,14 @@
 - **Schema:** ✅ Valid
 - **Mobile:** ✅ Viewport + lang present, no fixed-width containers
 
-### ❌ Category — Montréal / festivals-events (FR)
+### ✅ Category — Montréal / festivals-events (FR)
 
 - **URL:** https://myactivity-ca.vercel.app/fr/activites/montreal/festivals-events
 - **HTTP status:** 200
 - **Template type:** category-page
-- **JSON-LD @types found:** WebSite, SearchAction, EntryPoint, CollectionPage, ItemList, ListItem, TouristAttraction, PostalAddress, GeoCoordinates, BreadcrumbList
+- **JSON-LD @types found:** WebSite, SearchAction, EntryPoint, CollectionPage, ItemList, ListItem, TouristAttraction, PostalAddress, GeoCoordinates, Event, Place, Organization, BreadcrumbList
 - **Expected @types:** CollectionPage, BreadcrumbList, Event
-- **Schema issues:**
-  - Missing expected @types: Event
+- **Schema:** ✅ Valid
 - **Mobile:** ✅ Viewport + lang present, no fixed-width containers
 
 ### ✅ Seasonal — winter-montreal (EN)
